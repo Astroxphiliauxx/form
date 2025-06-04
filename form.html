@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Registration Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #fafafa;
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .submit-btn {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .cancel-btn {
+      background-color: #f44336;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>User Registration</h2>
+  <form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="birthdate">Birthdate:</label>
+    <input type="date" id="birthdate" name="birthdate" required>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address">
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="10-digit number">
+
+    <div class="buttons">
+      <button type="submit" class="submit-btn">Submit</button>
+      <button type="reset" class="cancel-btn">Cancel</button>
+    </div>
+  </form>
+
+</body>
+</html>
