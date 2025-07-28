@@ -1,87 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>User Registration Form</title>
-  <style>
- * {
-      box-sizing: border-box;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      background-color: #fafafa;
-    }
-    form {
-      max-width: 400px;
-      margin: auto;
-      background: #f4f4f4;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    label {
-      display: block;
-      margin-top: 15px;
-    }
-    input {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .buttons {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 20px;
-    }
-    button {
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .submit-btn {
-      background-color: #4CAF50;
-      color: white;
-    }
-    .cancel-btn {
-      background-color: #f44336;
-      color: white;
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Registration Form</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-  <form>
-    <h2 >User Registration</h2>
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #ea7fd4, #5d3d85);
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+      }
 
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
+      form {
+        margin: auto;
+        background: #fdd6f3;
+        padding: 20px;
+        border-radius: 10px;
+        width: 70%;
+        max-width: 400px;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      label {
+        display: block;
+        margin-top: 15px;
+      }
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input:focus {
+        border-color: #4ca1af;
+        outline: none;
+      }
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        margin-top: 25px;
+      }
 
-    <label for="birthdate">Birthdate:</label>
-    <input type="date" id="birthdate" name="birthdate" required>
+      button {
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
 
-    <label for="address">Address:</label>
-    <input type="text" id="address" name="address">
+      .submit-btn {
+        background-color: #8e44ad;
+        color: white;
+      }
 
-    <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="10-digit number">
+      .submit-btn:hover {
+        background-color: #732d91;
+      }
+      .cancel-btn {
+        background-color: #d36aa7;
+        color: white;
+      }
+      .cancel-btn:hover {
+        background-color: #b0528d;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h2>User Registration</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
 
-    <div class="buttons">
-      <button type="submit" class="submit-btn">Submit</button>
-      <button type="reset" class="cancel-btn">Cancel</button>
-    </div>
-  </form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
 
-</body>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <label for="birthdate">Birthdate:</label>
+      <input type="date" id="birthdate" name="birthdate" required />
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" />
+
+      <label for="phone">Phone Number:</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        pattern="[0-9]{10}"
+        required
+        placeholder="10-digit number"
+      />
+
+      <div class="buttons">
+        <button type="submit" class="submit-btn">Submit</button>
+        <button type="reset" class="cancel-btn">Cancel</button>
+      </div>
+    </form>
+  </body>
 </html>
